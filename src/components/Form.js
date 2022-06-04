@@ -8,7 +8,7 @@ function Form({ onCreate, onUpdate, onInputChange, mode, item }) {
 }
 
 return (
-    <div data-testid="form-1">
+    <div>
         <form onSubmit={handleSubmit}>
             <label htmlFor="title">
                 <input

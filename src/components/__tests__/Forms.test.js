@@ -1,10 +1,18 @@
-import { render, screen, cleanup } from '@testing-library/react'
-import Form from '../Form';
+import { render, screen } from '@testing-library/react'
+import App from '../../App';
+
+import Search from '../Search';
 
 
+test('should render search', () => {
+    render(<Search />);
+    const searchElement = screen.getByPlaceholderText(/Search.../i);
+    expect(searchElement).toBeInTheDocument();
+})
 
-test('should render Form component', () => {
-    render(<Form />);
-    const formElement = screen.getByTestId('form-1');
-    expect(formElement).toBeInTheDocument();
+
+test('notes app title render search', () => {
+    render(<App />);
+    const titleElement = screen.getByTestId('title');
+    expect(titleElement).toBeInTheDocument();
 })

@@ -98,7 +98,7 @@ return (
   <>
     <div className='bg-teal-700 max-w-3xl content-center items-center flex justify-center mx-auto mt-10 rounded-md p-8 mb-10'>
       <div>
-        <h1 className='text-3xl flex justify-center pb-10 text-white font-mono'>My Notes App</h1>
+        <h1 className='text-3xl flex justify-center pb-10 text-white font-mono' data-testid='title'>My Notes App</h1>
         <Search handleSearchNote={setNewSearch} />
         <Form 
           mode={mode}
