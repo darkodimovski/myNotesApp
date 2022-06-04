@@ -11,8 +11,9 @@ test('should render search', () => {
 })
 
 
-test('notes app title render search', () => {
+test('notes app title render', () => {
     render(<App />);
     const titleElement = screen.getByTestId('title');
     expect(titleElement).toBeInTheDocument();
 })
+
