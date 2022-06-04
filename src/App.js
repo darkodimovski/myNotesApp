@@ -114,14 +114,15 @@ return (
         }
         {activeTab === 'favorites' && 
         <Favorites items={currentPosts} onEdit={handleEdit} onDelete={handleDelete} handleFavToggle={addFavorite} />}
+        <PaginateMe
+          postsPerPage={postsPerPage}
+          totalPosts={items.length}
+          paginate={paginate}
+          items={currentPosts}
+        />
       </div>
     </div>
-    <PaginateMe
-        postsPerPage={postsPerPage}
-        totalPosts={items.length}
-        paginate={paginate}
-        items={currentPosts}
-      />
+    
   </>
   )
 }

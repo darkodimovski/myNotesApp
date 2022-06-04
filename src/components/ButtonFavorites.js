@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ButtonFavorites({setActiveTab, items}) {
     return (
-        <div>
+        <div className='mb-1'>
             { items.length ? (
                 <div className='flex justify-between text-white font-mono'>
                 <button onClick={() => setActiveTab('all')}>All</button>
