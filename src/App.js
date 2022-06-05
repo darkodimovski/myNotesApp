@@ -91,8 +91,11 @@ const indexOfLastPost = currentPage * postsPerPage;
 const indexOfFirstPost = indexOfLastPost - postsPerPage;
 const currentPosts = filteredData.slice(indexOfFirstPost, indexOfLastPost);
 
-const paginate = pageNumber => setCurrentPage(pageNumber);
-
+/* const paginate = pageNumber => setCurrentPage(pageNumber); */
+const paginate = (event, pageNumber) => {
+    event.preventDefault();
+    setCurrentPage(pageNumber);
+}
 
 return (
   <>
