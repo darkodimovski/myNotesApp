@@ -99,9 +99,9 @@ const paginate = (event, pageNumber) => {
 
 return (
   <>
-    <div className='bg-teal-700 max-w-2xl content-center items-center flex justify-center mx-auto mt-10 rounded-md p-4 mb-10'>
+    <div className='max-w-3xl content-center items-center flex justify-center mx-auto p-4 mb-10'>
       <div>
-        <h1 className='text-3xl flex justify-center pb-10 text-white font-mono' data-testid='title'>My Notes App</h1>
+        <h1 className='text-xl flex justify-center pb-3 text-white font-mono' data-testid='title'>My Notes App</h1>
         <Search handleSearchNote={setNewSearch} />
         <Form 
           mode={mode}
@@ -125,7 +125,6 @@ return (
         />
       </div>
     </div>
-    
   </>
   )
 }

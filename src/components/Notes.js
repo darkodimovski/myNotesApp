@@ -17,11 +17,11 @@ export default function Notes({ items, onEdit, onDelete, handleFavToggle}) {
                         <div className="mt-2 flex items-center justify-between">
                             <div>
                                 <button 
-                                    className="text-white bg-red-600 rounded-lg hover:bg-red-500 hover:text-black text-sm px-2 py-1" 
+                                    className="text-white bg-red-600 rounded-lg hover:bg-red-500 hover:text-white text-sm px-2 py-1" 
                                     onClick={() => onDelete(item.id)}>Delete
                                 </button>
                                 <button 
-                                    className="text-white bg-blue-600 rounded-lg hover:bg-blue-500 hover:text-black text-sm px-2 py-1 ml-1" 
+                                    className="text-white bg-blue-600 rounded-lg hover:bg-blue-500 hover:text-white text-sm px-2 py-1 ml-1" 
                                     onClick={() => onEdit(item)}>Edit
                                 </button>
                             </div>

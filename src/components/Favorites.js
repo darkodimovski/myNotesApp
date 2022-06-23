@@ -30,7 +30,7 @@ export const Favorites = ({ items, onEdit, onDelete, handleFavToggle }) => {
                             </div>
                             <div className='flex ml-2'>
                                 <button
-                                    className="text-white content-start items-center text-xl" 
+                                    className="content-start items-center" 
                                     onClick={() => {handleFavToggle(fav.id)}}>
                                     {fav.fav === true ? <FaHeart /> : <FaRegHeart/>} 
                                 </button>
